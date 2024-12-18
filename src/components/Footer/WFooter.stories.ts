@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WFooter from './WFooter.vue'
 
-const meta: any = {
+const meta: Meta<typeof WFooter> = {
   title: 'Example/WFooter',
   component: WFooter,
   tags: ['autodocs'],
@@ -12,7 +12,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Footer: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WFooter },
     setup() {
       return { args }

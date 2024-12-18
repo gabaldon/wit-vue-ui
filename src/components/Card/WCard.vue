@@ -25,7 +25,7 @@
     v-else
     class="h-full w-auto out-of-boundaries card border-2 border-black-950 bg-white-50 rounded-lg px-xl py-xl max-w-sm"
   >
-    <WIconRounded class="rounded-icon" :big-size="true" :disableHoverEffect="true">
+    <WIconRounded class="rounded-icon" :big-size="true" :disable-hover-effect="true">
       <slot name="icon">Icon</slot>
     </WIconRounded>
     <div class="ml-xl px-sm">
@@ -72,11 +72,13 @@ const props = defineProps({
   },
   urlLabel: {
     type: String,
-    required: false
+    required: false,
+    default: null
   },
   url: {
     type: String,
-    required: false
+    required: false,
+    default: null
   }
 })
 const isLinkCard = computed(() => props.type === CardType.Link)

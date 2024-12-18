@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WSection from './WSection.vue'
 
-const meta: any = {
+const meta: Meta<typeof WSection> = {
   title: 'Example/WSection',
   component: WSection,
   tags: ['autodocs'],
@@ -13,7 +13,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WSection },
     setup() {
       return { args }

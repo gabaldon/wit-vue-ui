@@ -48,7 +48,8 @@ const props = defineProps({
   },
   actionLabel: {
     type: String,
-    required: false
+    required: false,
+    default: null
   }
 })
 const emit = defineEmits(['action'])

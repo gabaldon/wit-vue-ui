@@ -6,9 +6,7 @@ export default {
       75: '75deg'
     }
   },
-  content: [
-    './src/components/**/*.{js,vue,ts}',
-  ],
+  content: ['./src/components/**/*.{js,vue,ts}'],
   safelist: ['btn-primary', 'btn-dark', 'btn-secondary', 'btn-disabled'],
   theme: {
     screens: {

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WNavbar from './WNavbar.vue'
 
-const meta: any = {
+const meta: Meta<typeof WNavbar> = {
   title: 'Example/WNavbar',
   component: WNavbar,
   tags: ['autodocs'],
@@ -13,7 +13,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Navbar: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WNavbar },
     setup() {
       return { args }

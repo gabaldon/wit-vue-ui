@@ -35,17 +35,18 @@ const props = defineProps({
   name: {
     type: String as PropType<IconName>,
     required: true,
-    validator(value: any) {
+    validator(value: IconName) {
       return iconNames.includes(value)
     }
   },
   color: {
-    type: String
-  },
+    type: String,
+    default: '#232323'
+  }
 })
 
 const internalColor = computed(() => {
-  return props.color || '#232323'
+  return props.color
 })
 
 const icons: Record<IconName, DefineComponent<SVGAttributes>> = {

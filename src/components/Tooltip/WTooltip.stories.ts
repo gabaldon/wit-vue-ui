@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import WTooltip from './WTooltip.vue'
 import { TooltipPosition, tooltipPostions } from './WTooltip'
 
-const meta: any = {
+const meta: Meta<typeof WTooltip> = {
   title: 'Example/WTooltip',
   component: WTooltip,
   tags: ['autodocs'],
@@ -19,7 +19,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WTooltip },
     setup() {
       return { args }

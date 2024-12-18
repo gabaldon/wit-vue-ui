@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WEmptyState from './WEmptyState.vue'
 
-const meta: any = {
+const meta: Meta<typeof WEmptyState> = {
   title: 'Example/WEmptyState',
   component: WEmptyState,
   tags: ['autodocs'],
@@ -13,7 +13,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WEmptyState },
     setup() {
       return { args }

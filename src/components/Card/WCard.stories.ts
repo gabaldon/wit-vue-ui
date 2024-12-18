@@ -2,12 +2,12 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import WCard from './WCard.vue'
 import { CardType } from './WCard'
 
-const meta: any = {
+const meta: Meta<typeof WCard> = {
   title: 'Example/WCard',
   component: WCard,
   tags: ['autodocs'],
   argTypes: {
-    type: { control: 'select', options: ['base', 'icon', 'link'] }
+    type: { control: 'select', options: [CardType.Base, CardType.Icon, CardType.Link] }
   },
   args: {
     type: CardType.Base
@@ -18,7 +18,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Base: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WCard },
     setup() {
       return { args }
@@ -26,7 +26,7 @@ export const Base: Story = {
     template: `<WCard v-bind="args"><template #header><h3>Lorem ipsum</h3></template><template #description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</template></WCard>`
   }),
   args: {
-    type: 'base'
+    type: CardType.Base
   }
 }
 
@@ -34,7 +34,7 @@ export const Icon: Story = {
   parameters: {
     backgrounds: { default: 'grey' }
   },
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WCard },
     setup() {
       return { args }
@@ -55,7 +55,7 @@ export const Icon: Story = {
         </svg></template></template></WCard>`
   }),
   args: {
-    type: 'icon',
+    type: CardType.Icon,
     title: 'Lorem ipsum',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
@@ -65,7 +65,7 @@ export const Icon: Story = {
 }
 
 export const Link: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WCard },
     setup() {
       return { args }
@@ -73,7 +73,7 @@ export const Link: Story = {
     template: `<WCard v-bind="args"><template #description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</template></WCard>`
   }),
   args: {
-    type: 'link',
+    type: CardType.Link,
     title: 'Lorem ipsum'
   }
 }

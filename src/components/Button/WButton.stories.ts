@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WButton from './WButton.vue'
 
-const meta: any = {
+const meta: Meta<typeof WButton> = {
   title: 'Example/WButton',
   component: WButton,
   tags: ['autodocs'],
@@ -17,7 +17,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WButton },
     setup() {
       return { args }
@@ -33,7 +33,7 @@ export const Secondary: Story = {
   parameters: {
     backgrounds: { default: 'grey' }
   },
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WButton },
     setup() {
       return { args }
@@ -46,7 +46,7 @@ export const Secondary: Story = {
 }
 
 export const Arrow: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WButton },
     setup() {
       return { args }
@@ -59,7 +59,7 @@ export const Arrow: Story = {
 }
 
 export const Dark: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WButton },
     setup() {
       return { args }

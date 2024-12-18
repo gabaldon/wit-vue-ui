@@ -4,9 +4,8 @@ wit-vue-ui is a vue component library with components intented to use in the wit
 
 ## Installation
 
-
 ```bash
-pnpm install wit-vue-ui 
+pnpm install wit-vue-ui
 ```
 
 ## Usage

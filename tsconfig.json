@@ -12,9 +12,9 @@
     "strict": true,
     "jsx": "preserve",
     "skipLibCheck": true,
-    "allowImportingTsExtensions": true,
+    "allowImportingTsExtensions": true
   },
-  "include": [ "./svgComponent.d.ts", "src/**/*.ts", "src/**/*.vue"],
+  "include": ["./svgComponent.d.ts", "src/**/*.ts", "src/**/*.vue"],
   "exclude": [
     "node_modules",
     "dist",

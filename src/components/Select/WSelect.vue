@@ -46,7 +46,7 @@ import { PropType, computed, DefineComponent, SVGAttributes } from 'vue'
 
 type Option = { key: string; label: string; icon: DefineComponent<SVGAttributes> | null }
 
-const model = defineModel()
+const model = defineModel<Option>()
 const props = defineProps({
   options: {
     type: Array as PropType<Array<Option>>,

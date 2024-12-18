@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import WInput from './WInput.vue'
 import { InputType, inputTypes } from './WInput'
 
-const meta: any = {
+const meta: Meta<typeof WInput> = {
   title: 'Example/WInput',
   component: WInput,
   tags: ['autodocs'],
@@ -16,7 +16,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Base: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WInput },
     setup() {
       return { args }
@@ -33,7 +33,7 @@ export const Action: Story = {
   parameters: {
     backgrounds: { default: 'grey' }
   },
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WInput },
     setup() {
       return { args }

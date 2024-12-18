@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WIcon from './WIcon.vue'
+import { IconName } from './WIcon'
 
-const meta: any = {
+const meta: Meta<typeof WIcon> = {
   title: 'Example/WIcon',
   component: WIcon,
   tags: ['autodocs'],
@@ -9,29 +10,29 @@ const meta: any = {
     name: {
       control: 'select',
       options: [
-        'ado',
-        'apple',
-        'bitmart',
-        'changelly',
-        'close-nav',
-        'discord',
-        'docker',
-        'empty-state',
-        'gate',
-        'github',
-        'hamburguer',
-        'letsexchange',
-        'linux',
-        'mexc',
-        'my-wit-wallet',
-        'navitagion-cursor',
-        'raspberry',
-        'right-arrow',
-        'sheikah',
-        'simpleswap',
-        'telegram',
-        'windows',
-        'x'
+        IconName.Ado,
+        IconName.Apple,
+        IconName.Bitmart,
+        IconName.Changelly,
+        IconName.closeNav,
+        IconName.Discord,
+        IconName.Docker,
+        IconName.EmptyState,
+        IconName.Gate,
+        IconName.Github,
+        IconName.Hamburguer,
+        IconName.Letsexchange,
+        IconName.Linux,
+        IconName.Mexc,
+        IconName.MyWitWallet,
+        IconName.NavitagionCursor,
+        IconName.Raspberry,
+        IconName.RightArrow,
+        IconName.Sheikah,
+        IconName.Simpleswap,
+        IconName.Telegram,
+        IconName.Windows,
+        IconName.X
       ]
     }
   },
@@ -42,7 +43,7 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Ado: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -50,12 +51,12 @@ export const Ado: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'ado',
+    name: IconName.Ado,
     color: 'black'
   }
 }
 export const Apple: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -63,12 +64,12 @@ export const Apple: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'apple',
+    name: IconName.Apple,
     color: 'black'
   }
 }
 export const Bitmart: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -76,11 +77,11 @@ export const Bitmart: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'bitmart'
+    name: IconName.Bitmart
   }
 }
 export const Changelly: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -88,11 +89,11 @@ export const Changelly: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'changelly'
+    name: IconName.Changelly
   }
 }
 export const CloseNav: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -100,11 +101,11 @@ export const CloseNav: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'close-nav'
+    name: IconName.closeNav
   }
 }
 export const Discord: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -112,11 +113,11 @@ export const Discord: Story = {
     template: `<WIcon v-bind="args"  />`
   }),
   args: {
-    name: 'discord'
+    name: IconName.Discord
   }
 }
 export const Docker: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -124,12 +125,12 @@ export const Docker: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'docker',
+    name: IconName.Docker,
     color: 'black'
   }
 }
 export const EmptyState: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -137,11 +138,11 @@ export const EmptyState: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'empty-state'
+    name: IconName.EmptyState
   }
 }
 export const Gate: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -149,11 +150,11 @@ export const Gate: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'gate'
+    name: IconName.Gate
   }
 }
 export const Github: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -161,11 +162,11 @@ export const Github: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'github'
+    name: IconName.Github
   }
 }
 export const Hamburguer: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -173,11 +174,11 @@ export const Hamburguer: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'hamburguer'
+    name: IconName.Hamburguer
   }
 }
 export const Letsexchange: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -185,11 +186,11 @@ export const Letsexchange: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'letsexchange'
+    name: IconName.Letsexchange
   }
 }
 export const Linux: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -197,12 +198,12 @@ export const Linux: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'linux',
+    name: IconName.Linux,
     color: 'black'
   }
 }
 export const Mexc: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -210,11 +211,11 @@ export const Mexc: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'mexc'
+    name: IconName.Mexc
   }
 }
 export const MyWitWallet: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -222,11 +223,11 @@ export const MyWitWallet: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'my-wit-wallet'
+    name: IconName.MyWitWallet
   }
 }
 export const NavitagionCursor: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -234,11 +235,11 @@ export const NavitagionCursor: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'navitagion-cursor'
+    name: IconName.NavitagionCursor
   }
 }
 export const Raspberry: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -246,12 +247,12 @@ export const Raspberry: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'raspberry',
+    name: IconName.Raspberry,
     color: 'black'
   }
 }
 export const RightArrow: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -259,11 +260,11 @@ export const RightArrow: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'right-arrow'
+    name: IconName.RightArrow
   }
 }
 export const Sheikah: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -271,11 +272,11 @@ export const Sheikah: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'sheikah'
+    name: IconName.Sheikah
   }
 }
 export const Simpleswap: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -283,11 +284,11 @@ export const Simpleswap: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'simpleswap'
+    name: IconName.Simpleswap
   }
 }
 export const Telegram: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -295,12 +296,12 @@ export const Telegram: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'telegram'
+    name: IconName.Telegram
   }
 }
 
 export const Windows: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -308,13 +309,13 @@ export const Windows: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'windows',
+    name: IconName.Windows,
     color: 'black'
   }
 }
 
 export const X: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WIcon },
     setup() {
       return { args }
@@ -322,6 +323,6 @@ export const X: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: 'x'
+    name: IconName.X
   }
 }

@@ -4,13 +4,14 @@ import {
   DropdownXPosition,
   dropdownXPositions,
   DropdownYPosition,
-  dropdownYPositions
+  dropdownYPositions,
+  Option
 } from './WSelect'
 import { ref } from 'vue'
 import 'vue-select/dist/vue-select.css'
 import Icon from '@/assets/svg/navigation-cursor.svg?component'
 
-const meta: any = {
+const meta: Meta<typeof WSelect> = {
   title: 'Example/WSelect',
   component: WSelect,
   tags: ['autodocs'],
@@ -40,16 +41,16 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  render: (args: any) => ({
+  render: (args: unknown) => ({
     components: { WSelect },
     setup() {
       const model = ref({
         key: 'en',
         label: 'English',
         icon: null
-      })
+      } as Option)
 
-      function update($event: any) {
+      function update($event: Option) {
         model.value = $event
       }
 

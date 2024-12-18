@@ -3,4 +3,4 @@ declare module '*.svg?component' {
   const src: DefineComponent<SVGAttributes>
   export default src
 }
-declare module '*.vue';
+declare module '*.vue'
