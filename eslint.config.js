@@ -12,7 +12,7 @@ export default [
   ...storybook.configs['flat/recommended'],
   eslintConfigPrettier,
   {
-    ignores: ['package/dist/**', 'dist', '!.storybook']
+    ignores: ['package/dist/**', 'dist', 'pnpm-lock.yaml', '!.storybook']
   },
   {
     files: ['pages/*.vue'],
