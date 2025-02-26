@@ -8,7 +8,7 @@
         'opacity-50': currentPage === 1,
         'pointer-events-none': currentPage === 1
       }"
-      class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none"
+      class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
       aria-label="Previous"
     >
       <svg
@@ -38,8 +38,10 @@
         :class="{
           'outline-none': p === currentPage,
           'bg-wit-blue-500': p === currentPage,
+          'text-black-950': p === currentPage,
           'pointer-events-none': p === currentPage,
-          'hover:bg-wit-blue-400': p !== divider
+          'hover:bg-wit-blue-400': p !== divider,
+          'hover:text-black-950': p !== divider
         }"
       >
         {{ p }}
@@ -49,7 +51,7 @@
       type="button"
       :disabled="!canGoLastOrNext"
       @click="onClickNext"
-      class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none"
+      class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
       :class="{ 'opacity-10': !canGoLastOrNext, 'pointer-events-none': !canGoLastOrNext }"
       aria-label="Next"
     >

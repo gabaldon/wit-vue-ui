@@ -7,7 +7,7 @@ exports[`WPagination > renders properly with divider 1`] = `
 >
   <button
     aria-label="Previous"
-    class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none"
+    class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
     type="button"
   >
     <svg
@@ -35,13 +35,13 @@ exports[`WPagination > renders properly with divider 1`] = `
   >
     
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       1
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       2
@@ -50,7 +50,7 @@ exports[`WPagination > renders properly with divider 1`] = `
   </div>
   <button
     aria-label="Next"
-    class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none opacity-10 pointer-events-none"
+    class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none opacity-10 pointer-events-none"
     disabled=""
     type="button"
   >
@@ -84,7 +84,7 @@ exports[`WPagination > renders properly without divider 1`] = `
 >
   <button
     aria-label="Previous"
-    class="opacity-50 pointer-events-none min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none"
+    class="opacity-50 pointer-events-none min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
     disabled=""
     type="button"
   >
@@ -113,31 +113,31 @@ exports[`WPagination > renders properly without divider 1`] = `
   >
     
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg outline-none bg-wit-blue-500 pointer-events-none hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg outline-none bg-wit-blue-500 text-black-950 pointer-events-none hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       1
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       2
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       3
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       4
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       5
@@ -150,7 +150,7 @@ exports[`WPagination > renders properly without divider 1`] = `
       ...
     </button>
     <button
-      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400"
+      class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950"
       type="button"
     >
       20
@@ -159,7 +159,7 @@ exports[`WPagination > renders properly without divider 1`] = `
   </div>
   <button
     aria-label="Next"
-    class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 focus:outline-none"
+    class="min-h-lg min-w-lg py-sm px-sm inline-flex justify-center items-center gap-xs text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
     type="button"
   >
     <span>
