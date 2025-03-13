@@ -31,9 +31,6 @@ export const Base: Story = {
 }
 
 export const Icon: Story = {
-  parameters: {
-    backgrounds: { default: 'grey' }
-  },
   render: (args: unknown) => ({
     components: { WCard },
     setup() {

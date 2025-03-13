@@ -30,9 +30,6 @@ export const Base: Story = {
 }
 
 export const Action: Story = {
-  parameters: {
-    backgrounds: { default: 'grey' }
-  },
   render: (args: unknown) => ({
     components: { WInput },
     setup() {

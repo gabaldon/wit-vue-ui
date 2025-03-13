@@ -30,9 +30,6 @@ export const Primary: Story = {
 }
 
 export const Secondary: Story = {
-  parameters: {
-    backgrounds: { default: 'grey' }
-  },
   render: (args: unknown) => ({
     components: { WButton },
     setup() {
