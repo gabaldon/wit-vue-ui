@@ -43,3 +43,17 @@ export const Action: Story = {
     contentType: 'email'
   }
 }
+
+export const Icon: Story = {
+  render: (args: unknown) => ({
+    components: { WInput },
+    setup() {
+      return { args }
+    },
+    template: `<WInput v-bind="args">WInput</WInput>`
+  }),
+  args: {
+    type: InputType.Icon,
+    placeholder: 'Search'
+  }
+}
