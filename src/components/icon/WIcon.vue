@@ -1,5 +1,10 @@
 <template>
-  <component :class="{ color: color }" :is="iconComponent" v-bind="$attrs" />
+  <component
+    :class="{ color: color }"
+    class="dark:fill-black-950 fill-white-50"
+    :is="iconComponent"
+    v-bind="$attrs"
+  />
 </template>
 
 <script setup lang="ts">
@@ -41,12 +46,12 @@ const props = defineProps({
   },
   color: {
     type: String,
-    default: '#232323'
+    default: null
   }
 })
 
 const internalColor = computed(() => {
-  return props.color
+  return props.color ? props.color : null
 })
 
 const icons: Record<IconName, DefineComponent<SVGAttributes>> = {

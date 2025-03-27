@@ -1,6 +1,6 @@
 <template>
   <div ref="arrow">
-    <WIcon :name="IconName.RightArrow" class="arrow ml-md h-[14px]" :color="color"></WIcon>
+    <WIcon :name="IconName.RightArrow" class="arrow ml-md h-[14px]"></WIcon>
   </div>
 </template>
 
