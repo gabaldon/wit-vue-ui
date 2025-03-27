@@ -14,7 +14,7 @@ exports[`SocialsBar > renders properly 1`] = `
   >
     
     <svg
-      class="color icon icon"
+      class="dark:fill-black-950 fill-white-50 icon icon"
       data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
@@ -40,7 +40,7 @@ exports[`SocialsBar > renders properly 1`] = `
   >
     
     <svg
-      class="color icon icon"
+      class="dark:fill-black-950 fill-white-50 icon icon"
       data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
@@ -68,7 +68,7 @@ exports[`SocialsBar > renders properly 1`] = `
   >
     
     <svg
-      class="color icon icon"
+      class="dark:fill-black-950 fill-white-50 icon icon"
       data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"
@@ -96,7 +96,7 @@ exports[`SocialsBar > renders properly 1`] = `
   >
     
     <svg
-      class="color icon icon"
+      class="dark:fill-black-950 fill-white-50 icon icon"
       data-v-5ed1f484=""
       data-v-c15836e8=""
       fill="none"

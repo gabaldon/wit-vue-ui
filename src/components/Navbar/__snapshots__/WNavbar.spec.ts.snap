@@ -145,6 +145,7 @@ exports[`WNavbar > renders properly the component 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
+        class="hamburguer-rect"
         d="M.821.4h56v8h-56zM.821 28.4h56v8h-56zM.821 14.4h56v8h-56z"
         fill="#232323"
       />

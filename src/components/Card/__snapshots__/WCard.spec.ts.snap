@@ -96,7 +96,7 @@ exports[`WCard > icon 1`] = `
         data-v-870c3481=""
       >
         <svg
-          class="color arrow ml-md h-[14px] arrow ml-md h-[14px]"
+          class="dark:fill-black-950 fill-white-50 dark:fill-black-950 fill-white-50 arrow ml-md h-[14px] arrow ml-md h-[14px]"
           data-v-c15836e8=""
           fill="none"
           height="25"
@@ -105,8 +105,8 @@ exports[`WCard > icon 1`] = `
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
+            class="dark:fill-black-950 fill-white-50"
             d="M2.75 24.23c-.44 0-.88-.16-1.22-.49-.7-.68-.73-1.79-.05-2.5l8.66-9.04-8.66-9.04A1.769 1.769 0 0 1 4.03.71l9.83 10.26c.66.68.66 1.76 0 2.45L4.03 23.68c-.35.37-.82.55-1.28.55"
-            fill="#C6C6C6"
           />
         </svg>
       </div>
