@@ -1,5 +1,8 @@
 <template>
-  <WSection :frame-classes="'bg-black-950'" :content-classes="'grid justify-items-center'">
+  <WSection
+    :frame-classes="'bg-black-950 dark:bg-black-800'"
+    :content-classes="'grid justify-items-center'"
+  >
     <template #content>
       <div class="footer grid gap-xl">
         <div class="grid grid-cols-[max-content_1fr] md:grid-cols-1 gap-3xl">
