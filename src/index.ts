@@ -17,6 +17,7 @@ import WSelect from './components/Select/WSelect.vue'
 import WSpinner from './components/Spinner/WSpinner.vue'
 import WTooltip from './components/Tooltip/WTooltip.vue'
 import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
+import WSwitch from './components/Switch/WSwitch.vue'
 
 export { buttonTypes, ButtonType } from './components/Button/WButton'
 export { CardType, cardTypes } from './components/Card/WCard'
@@ -51,7 +52,8 @@ export {
   WSection,
   WSelect,
   WSocialsBar,
-  WSpinner
+  WSpinner,
+  WSwitch
 }
 export type WButton = typeof WButton
 export type WCard = typeof WCard
@@ -70,6 +72,7 @@ export type WSocialsBar = typeof WSocialsBar
 export type WSelect = typeof WSelect
 export type WSpinner = typeof WSpinner
 export type WTooltip = typeof WTooltip
+export type WSwitch = typeof WSwitch
 
 import type { App } from 'vue'
 
@@ -92,6 +95,7 @@ const WComponents = {
     app.component('WSelect', WSelect)
     app.component('WSpinner', WSpinner)
     app.component('WTooltip', WTooltip)
+    app.component('WSwitch', WSwitch)
   }
 }
 
