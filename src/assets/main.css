@@ -12,51 +12,43 @@
   }
   /* Titles */
   .title-h1 {
-    @apply font-title text-7xl font-semibold sm:text-6xl;
+    @apply font-title text-7xl font-semibold sm:text-6xl text-black-950 dark:text-white-50;
     line-height: 1;
-    color: #232323;
   }
 
   .title-h2-xl {
-    @apply font-title text-7xl font-semibold sm:text-6xl;
+    @apply font-title text-7xl font-semibold sm:text-6xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .title-h2 {
-    @apply font-title text-5xl font-semibold sm:text-4xl;
+    @apply font-title text-5xl font-semibold sm:text-4xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .title-h2-light {
-    @apply font-title text-5xl font-normal sm:text-4xl;
+    @apply font-title text-5xl font-normal sm:text-4xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .title-h3 {
-    @apply font-title text-4xl font-semibold sm:text-3xl;
+    @apply font-title text-4xl font-semibold sm:text-3xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .title-h4 {
-    @apply font-title text-4xl font-semibold sm:text-3xl;
+    @apply font-title text-4xl font-semibold sm:text-3xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .title-h5 {
-    @apply text-2xl font-semibold sm:text-xl;
+    @apply text-2xl font-semibold sm:text-xl text-black-950 dark:text-white-50;
     line-height: 1.1;
-    color: #232323;
   }
 
   .text {
-    @apply text-base;
+    @apply text-base text-black-900 dark:text-white-100;
     line-height: 1.5;
-    color: #333;
   }
 
   .text-dark {
@@ -65,9 +57,8 @@
   }
 
   .text-link {
-    @apply text-sm;
+    @apply text-sm text-black-900 dark:text-white-100;
     line-height: 1.5;
-    color: #333;
   }
 
   .text-link-dark {

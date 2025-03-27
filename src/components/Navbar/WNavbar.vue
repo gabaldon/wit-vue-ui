@@ -123,6 +123,9 @@ watch(redirectionActive, () => {
       }
     }
   }
+  .hamburguer-rect {
+    @apply fill-black-950 dark:fill-white-50;
+  }
   .hamburguer-container {
     display: none;
     .hamburguer {
@@ -174,6 +177,7 @@ watch(redirectionActive, () => {
       align-items: center;
     }
     .navbar-links {
+      @apply bg-black-950 dark:bg-black-900;
       padding: 0;
       display: grid;
       grid-template-rows: repeat(4, max-content);
