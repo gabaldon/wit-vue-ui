@@ -1,12 +1,13 @@
 <template>
   <div class="grid gap-md justify-center align-middle">
-    <EmptyStateLogo class="w-max" />
-    <p>{{ text }}</p>
+    <WIcon :name="IconName.EmptyState" />
+    <p class="text">{{ text }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-import EmptyStateLogo from '@/assets/svg/empty-state.svg?component'
+import WIcon from '../icon/WIcon.vue'
+import { IconName } from '../icon/WIcon'
 defineProps({
   text: {
     type: String,

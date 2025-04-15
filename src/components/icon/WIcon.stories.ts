@@ -51,8 +51,8 @@ export const Ado: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: IconName.Ado,
-    color: 'black'
+    name: IconName.Ado
+    // color: 'black'
   }
 }
 export const Apple: Story = {
@@ -125,8 +125,7 @@ export const Docker: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: IconName.Docker,
-    color: 'black'
+    name: IconName.Docker
   }
 }
 export const EmptyState: Story = {
@@ -198,8 +197,7 @@ export const Linux: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: IconName.Linux,
-    color: 'black'
+    name: IconName.Linux
   }
 }
 export const Mexc: Story = {
@@ -247,8 +245,7 @@ export const Raspberry: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: IconName.Raspberry,
-    color: 'black'
+    name: IconName.Raspberry
   }
 }
 export const RightArrow: Story = {
@@ -309,8 +306,7 @@ export const Windows: Story = {
     template: `<WIcon v-bind="args" />`
   }),
   args: {
-    name: IconName.Windows,
-    color: 'black'
+    name: IconName.Windows
   }
 }
 

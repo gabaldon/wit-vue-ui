@@ -1,10 +1,5 @@
 <template>
-  <component
-    :class="{ color: color }"
-    class="dark:fill-black-950 fill-white-50"
-    :is="iconComponent"
-    v-bind="$attrs"
-  />
+  <component :class="`${fillColor}`" :is="iconComponent" v-bind="$attrs" />
 </template>
 
 <script setup lang="ts">
@@ -54,6 +49,14 @@ const internalColor = computed(() => {
   return props.color ? props.color : null
 })
 
+const fillColor = computed(() => {
+  if (!props.color) {
+    return 'default-color'
+  } else {
+    return 'color'
+  }
+})
+
 const icons: Record<IconName, DefineComponent<SVGAttributes>> = {
   [IconName.Ado]: AdoIcon,
   [IconName.Apple]: AppleIcon,
@@ -90,6 +93,13 @@ const iconComponent = computed(() => {
   :deep(path) {
     &:not(.fill-exluded) {
       fill: v-bind(internalColor);
+    }
+  }
+}
+.default-color {
+  :deep(path) {
+    &:not(.fill-exluded) {
+      @apply fill-black-950 dark:fill-white-50;
     }
   }
 }

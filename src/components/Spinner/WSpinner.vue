@@ -2,7 +2,7 @@
   <div role="status" class="spinner">
     <Spinner
       aria-hidden="true"
-      class="w-full h-full text-gray-100 animate-spin fill-wit-blue-500"
+      class="w-full h-full text-gray-100 dark:text-black-600 animate-spin fill-wit-blue-500"
     />
     <span class="sr-only">Loading...</span>
   </div>
