@@ -21,6 +21,6 @@ export const Default: Story = {
     template: `<WSwitch v-bind="args">Switch</Switch>`
   }),
   args: {
-    modelValue: true,
+    modelValue: true
   }
 }

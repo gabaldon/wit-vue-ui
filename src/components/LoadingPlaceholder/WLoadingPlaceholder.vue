@@ -1,6 +1,6 @@
 <template>
   <div
-    class="placeholder bg-gray-50 bg-opacity-60 bg-gradient-to-r from-gray-50 shadow-sm shadow-gray-100 bg-[length:200%_200%]"
+    class="placeholder bg-gray-50 dark:bg-black-900 bg-opacity-60 bg-gradient-to-r from-gray-50 dark:from-black-800 shadow-sm shadow-gray-100 dark:shadow-black-700 bg-[length:200%_200%]"
   >
     &nbsp;
   </div>

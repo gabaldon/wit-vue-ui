@@ -18,7 +18,7 @@ export const Default: Story = {
     setup() {
       return { args }
     },
-    template: `<WLink v-bind="args">Link</Link>`
+    template: `<WLink v-bind="args" class="text">Link</Link>`
   }),
   args: {
     label: 'Link',

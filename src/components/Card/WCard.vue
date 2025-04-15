@@ -112,8 +112,8 @@ function toggleHover() {
 }
 
 .card {
-  box-shadow: 7px 10px 0px rgb(0, 0, 0);
   position: relative;
+  @apply shadow-[7px_10px_0px] shadow-black-950 dark:shadow-wit-blue-500;
 }
 
 .title-h2 {
