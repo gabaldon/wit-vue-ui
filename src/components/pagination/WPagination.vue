@@ -8,7 +8,7 @@
         'opacity-50': currentPage === 1,
         'pointer-events-none': currentPage === 1
       }"
-      class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 focus:outline-none"
+      class="min-h-[38px] min-w-[38px] py-sm px-sm inline-flex justify-center items-center gap-sm text-sm rounded-lg hover:bg-wit-blue-400 hover:text-black-950 dark:hover:text-white-50 focus:outline-none"
       aria-label="Previous"
     >
       <svg
@@ -23,25 +23,25 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <path d="m15 18-6-6 6-6"></path>
+        <path d="m15 18-6-6 6-6" class="stroke-black-950 dark:stroke-white-50"></path>
       </svg>
-      <span>Previous</span>
+      <span class="text-black-950 dark:text-white-50">Previous</span>
     </button>
     <div class="flex items-center gap-x-xs">
       <button
         v-for="(p, i) in displayedPages"
         :key="`${p}-${i}`"
         type="button"
-        class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg"
+        class="min-h-[38px] min-w-[38px] flex justify-center items-center py-sm px-sm text-sm rounded-lg text-black-950 dark:text-white-50"
         :disabled="p === divider"
         @click="onClickPage(p)"
         :class="{
           'outline-none': p === currentPage,
           'bg-wit-blue-500': p === currentPage,
-          'text-black-950': p === currentPage,
+          '[&&]:text-black-950': p === currentPage,
           'pointer-events-none': p === currentPage,
           'hover:bg-wit-blue-400': p !== divider,
-          'hover:text-black-950': p !== divider
+          '[&&]:hover:text-black-950': p !== divider
         }"
       >
         {{ p }}
@@ -55,7 +55,7 @@
       :class="{ 'opacity-10': !canGoLastOrNext, 'pointer-events-none': !canGoLastOrNext }"
       aria-label="Next"
     >
-      <span>Next</span>
+      <span class="text-black-950 dark:text-white-50">Next</span>
       <svg
         class="shrink-0 size-3.5"
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <path d="m9 18 6-6-6-6"></path>
+        <path d="m9 18 6-6-6-6" class="stroke-black-950 dark:stroke-white-50"></path>
       </svg>
     </button>
   </nav>
