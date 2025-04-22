@@ -131,7 +131,7 @@ exports[`WTable > renders properly 1`] = `
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
@@ -178,7 +178,7 @@ exports[`WTable > renders properly 1`] = `
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"
@@ -239,7 +239,7 @@ exports[`WTable > renders properly 1`] = `
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
@@ -286,7 +286,7 @@ exports[`WTable > renders properly 1`] = `
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"
@@ -347,7 +347,7 @@ exports[`WTable > renders properly 1`] = `
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
@@ -394,7 +394,7 @@ exports[`WTable > renders properly 1`] = `
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"

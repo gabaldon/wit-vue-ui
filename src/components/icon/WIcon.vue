@@ -41,6 +41,10 @@ const props = defineProps({
       return iconNames.includes(value)
     }
   },
+  contrast: {
+    type: Boolean,
+    default: false
+  },
   color: {
     type: String,
     default: null
@@ -52,7 +56,9 @@ const internalColor = computed(() => {
 })
 
 const fillColor = computed(() => {
-  if (!props.color) {
+  if (props.contrast) {
+    return 'default-color-reverse'
+  } else if (!props.color) {
     return 'default-color'
   } else {
     return 'color'
@@ -104,6 +110,13 @@ const iconComponent = computed(() => {
   :deep(path) {
     &:not(.fill-exluded) {
       @apply fill-black-950 dark:fill-white-50;
+    }
+  }
+}
+.default-color-reverse {
+  :deep(path) {
+    &:not(.fill-exluded) {
+      @apply dark:fill-black-950 fill-white-50;
     }
   }
 }

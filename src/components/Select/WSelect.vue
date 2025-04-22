@@ -144,10 +144,8 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
   .vs__dropdown-toggle,
   .vs__dropdown-menu {
     @apply rounded-lg dark:bg-white-50 bg-white-950;
-    // background: v-bind(hexPrimaryColor);
     box-shadow: none;
     border: none;
-    // color: v-bind(hexSecondaryColor);
     min-width: max-content;
     .dropdown-items {
       margin-right: 8px;
@@ -157,8 +155,6 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
     @apply border border-black-950 dark:border-white-50 bg-white-50 dark:bg-black-950;
     z-index: 9;
     top: v-bind(yPosition);
-    // background: v-bind(hexSecondaryColor);
-    // border: 2px solid v-bind(hexPrimaryColor);
     border: 2px solid;
     border-radius: 16px;
   }
@@ -169,19 +165,15 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
   .vs__dropdown-option {
     font-family: 'NeueMachina-Regular', sans-serif;
     @apply dark:text-white-50 text-black-950;
-    // color: v-bind(hexPrimaryColor);
   }
 
   .vs__dropdown-option--highlight {
     @apply dark:text-black-950 text-white-50  dark:bg-white-50 bg-black-950;
     z-index: 10;
-    // color: v-bind(hexSecondaryColor);
-    // background: v-bind(hexPrimaryColor);
   }
 
   .vs__clear,
   .vs__open-indicator {
-    // fill: v-bind(hexSecondaryColor);
     @apply dark:fill-black-950 fill-white-50;
     transform: scale(0.5);
     transition: transform 150ms cubic-bezier(1, -0.115, 0.975, 0.855);
@@ -190,7 +182,6 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
 
   .vs__selected {
     @apply dark:text-black-950 text-white-50;
-    // color: v-bind(hexSecondaryColor);
     margin: 0;
     padding: 0;
     display: flex;
@@ -200,11 +191,9 @@ const xPosition = computed(() => xPositions[props.dropdownXPosition])
   &:hover {
     .vs__selected {
       @apply dark:text-black-950 text-white-50;
-      // color: v-bind(hexSecondaryColor);
     }
     .vs__open-indicator {
       @apply dark:text-black-950 text-white-50;
-      // color: v-bind(hexSecondaryColor);
     }
   }
   // remove extra space

@@ -10,12 +10,12 @@
       :placeholder="placeholder"
       :name="contentType"
       :class="{
-        [`[&&]:border-black-950 [&&]:dark:border-white-50 border-2 [&&]:focus:border-wit-blue-500 [&&]:dark:focus:border-wit-blue-500`]:
+        [`[&&]:border-black-950 [&&]:dark:border-white-50 border  [&&]:focus:border-white-50 [&&]:dark:focus:border-wit-blue-500`]:
           outlined,
         [`[&&]:rounded-l-full [&&]:rounded-none [&&]:dark:focus:border-r-0 [&&]:focus:border-r-0`]:
           isActionInput
       }"
-      class="text-black-950 dark:text-white-50 bg-white-50 dark:bg-black-950 outline-none border-white-50 dark:border-black-950 required email rounded-full border min-w-[300px] sm:min-w-full py-sm px-md block w-full shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 focus:border-wit-blue-500 dark:focus:border-wit-blue-500 focus:border-2"
+      class="text-black-950 dark:text-white-50 bg-white-50 dark:bg-black-950 outline-none border-white-50 dark:border-black-950 required email rounded-full border min-w-[300px] sm:min-w-full py-sm px-md block w-full shadow-sm text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 focus:border-white-50 dark:focus:border-wit-blue-500 focus:border"
       value=""
     />
     <input
@@ -23,7 +23,7 @@
       @click="action"
       type="submit"
       :name="actionLabel"
-      class="text-wit-blue-500 relative z-0 dark:text-black-950 margin rounded-r-full py-sm px-md inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-black-950 dark:border-white-50 bg-black-950 dark:bg-white-50 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
+      class="text-wit-blue-500 relative z-0 dark:text-black-950 margin rounded-r-full py-sm px-md inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-e-md border border-black-950 dark:border-wit-blue-500 bg-black-950 dark:bg-wit-blue-500 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
       :value="actionLabel"
     />
     <div v-else-if="isIconInput" class="absolute right-md z-10">

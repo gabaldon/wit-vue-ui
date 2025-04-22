@@ -21,7 +21,7 @@ export const Base: Story = {
     setup() {
       return { args }
     },
-    template: `<WInput v-bind="args">WInput</WInput>`
+    template: `<div class="bg-wit-blue-500 dark:bg-black-800 p-2xl"><WInput v-bind="args">WInput</WInput></div>`
   }),
   args: {
     type: InputType.Base,
@@ -35,7 +35,7 @@ export const Action: Story = {
     setup() {
       return { args }
     },
-    template: `<WInput v-bind="args">WInput</WInput>`
+    template: `<div class="bg-wit-blue-500 dark:bg-black-800 p-2xl"><WInput v-bind="args">WInput</WInput></div>`
   }),
   args: {
     type: InputType.Action,
@@ -50,7 +50,7 @@ export const Icon: Story = {
     setup() {
       return { args }
     },
-    template: `<WInput v-bind="args">WInput</WInput>`
+    template: `<div class="bg-wit-blue-500 dark:bg-black-800 p-2xl"><WInput v-bind="args">WInput</WInput></div>`
   }),
   args: {
     type: InputType.Icon,

@@ -1,5 +1,10 @@
 <template>
-  <a v-if="url" :href="url ?? ''" target="_blank" class="text-wit-blue-600 dark:text-wit-blue-500">
+  <a
+    v-if="url"
+    :href="url ?? ''"
+    target="_blank"
+    class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+  >
     {{ value ?? 'unknown' }}
   </a>
   <span v-else>

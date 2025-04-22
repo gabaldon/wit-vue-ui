@@ -59,7 +59,7 @@ exports[`WCard > icon 1`] = `
     />
   </div>
   <p
-    class="text text-black-950 mb-lg"
+    class="text-black-950 mb-lg"
     data-v-47e965dc=""
   >
     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -96,7 +96,7 @@ exports[`WCard > icon 1`] = `
         data-v-870c3481=""
       >
         <svg
-          class="dark:fill-black-950 fill-white-50 default-color arrow ml-md h-[14px] arrow ml-md h-[14px]"
+          class="dark:fill-black-950 fill-white-50 default-color-reverse arrow ml-md h-[14px] arrow ml-md h-[14px]"
           data-v-c15836e8=""
           fill="none"
           height="25"

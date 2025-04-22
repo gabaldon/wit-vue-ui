@@ -1,6 +1,6 @@
 <template>
   <div ref="arrow">
-    <WIcon :name="IconName.RightArrow" class="arrow ml-md h-[14px]"></WIcon>
+    <WIcon :name="IconName.RightArrow" class="arrow ml-md h-[14px]" :contrast="true"></WIcon>
   </div>
 </template>
 
@@ -16,10 +16,6 @@ const props = defineProps({
   hover: {
     type: Boolean,
     default: false
-  },
-  color: {
-    type: String,
-    default: '#fff'
   }
 })
 
