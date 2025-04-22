@@ -7,11 +7,16 @@ import { computed, DefineComponent, PropType, SVGAttributes } from 'vue'
 
 import AdoIcon from '@/assets/svg/ado.svg?component'
 import AppleIcon from '@/assets/svg/apple.svg?component'
+import ArrowDown from '@/assets/svg/arrow-down.svg?component'
+import ArrowUp from '@/assets/svg/arrow-up.svg?component'
 import BitmartIcon from '@/assets/svg/bitmart.svg?component'
 import ChangellyIcon from '@/assets/svg/changelly.svg?component'
 import closeNavIcon from '@/assets/svg/close-nav.svg?component'
+import DiscordIcon from '@/assets/svg/discord.svg?component'
 import DockerIcon from '@/assets/svg/docker.svg?component'
 import EmptyStateIcon from '@/assets/svg/empty-state.svg?component'
+import GateIcon from '@/assets/svg/gate.svg?component'
+import GithubIcon from '@/assets/svg/github.svg?component'
 import HamburguerIcon from '@/assets/svg/hamburguer.svg?component'
 import LetsexchangeIcon from '@/assets/svg/letsexchange.svg?component'
 import LinuxIcon from '@/assets/svg/linux.svg?component'
@@ -19,14 +24,11 @@ import MexcIcon from '@/assets/svg/mexc.svg?component'
 import MyWitWalletIcon from '@/assets/svg/my-wit-wallet.svg?component'
 import NavitagionCursorIcon from '@/assets/svg/navigation-cursor.svg?component'
 import RaspberryIcon from '@/assets/svg/raspberry.svg?component'
+import RightArrowIcon from '@/assets/svg/icon-right-arrow.svg?component'
 import SheikahIcon from '@/assets/svg/sheikah.svg?component'
 import SimpleswapIcon from '@/assets/svg/simpleswap.svg?component'
-import WindowsIcon from '@/assets/svg/windows.svg?component'
-import DiscordIcon from '@/assets/svg/discord.svg?component'
-import GateIcon from '@/assets/svg/gate.svg?component'
-import GithubIcon from '@/assets/svg/github.svg?component'
-import RightArrowIcon from '@/assets/svg/icon-right-arrow.svg?component'
 import TelegramIcon from '@/assets/svg/telegram.svg?component'
+import WindowsIcon from '@/assets/svg/windows.svg?component'
 import XIcon from '@/assets/svg/x.svg?component'
 
 import { iconNames, IconName } from './WIcon'
@@ -60,6 +62,8 @@ const fillColor = computed(() => {
 const icons: Record<IconName, DefineComponent<SVGAttributes>> = {
   [IconName.Ado]: AdoIcon,
   [IconName.Apple]: AppleIcon,
+  [IconName.ArrowDown]: ArrowDown,
+  [IconName.ArrowUp]: ArrowUp,
   [IconName.Bitmart]: BitmartIcon,
   [IconName.Changelly]: ChangellyIcon,
   [IconName.closeNav]: closeNavIcon,

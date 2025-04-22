@@ -1,6 +1,8 @@
 export enum IconName {
   Ado = 'ado',
   Apple = 'apple',
+  ArrowDown = 'arrow-down',
+  ArrowUp = 'arrow-up',
   Bitmart = 'bitmart',
   Changelly = 'changelly',
   closeNav = 'close-nav',
