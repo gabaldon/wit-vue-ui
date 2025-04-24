@@ -3,16 +3,16 @@
     class="opacity-60 hover:opacity-100 grid grid-rows-1 grid-flow-row content-center gap-y-md w-fit justify-items-center"
   >
     <IconExternalLink :url="SOCIAL_URLS.x" class="link">
-      <WIcon :name="IconName.X" class="icon" />
+      <WIcon :name="IconName.X" class="icon" color="#989898" />
     </IconExternalLink>
     <IconExternalLink :url="SOCIAL_URLS.telegram" class="link">
-      <WIcon :name="IconName.Telegram" class="icon" />
+      <WIcon :name="IconName.Telegram" class="icon" color="#989898" />
     </IconExternalLink>
     <IconExternalLink :url="SOCIAL_URLS.discord" class="link">
-      <WIcon :name="IconName.Discord" class="icon" />
+      <WIcon :name="IconName.Discord" class="icon" color="#989898" />
     </IconExternalLink>
     <IconExternalLink :url="SOCIAL_URLS.github" class="link">
-      <WIcon :name="IconName.Github" class="icon" />
+      <WIcon :name="IconName.Github" class="icon" color="#989898" />
     </IconExternalLink>
 
     <!-- TODO(#413): set width to 40px to avoid wrong alignment -->

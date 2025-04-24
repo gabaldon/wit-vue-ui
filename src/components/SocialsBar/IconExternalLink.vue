@@ -11,14 +11,3 @@ defineProps({
   }
 })
 </script>
-
-<style lang="scss">
-.icon {
-  .social-icon {
-    @apply fill-white-400 transition-all;
-  }
-}
-.icon:hover > .social-icon {
-  @apply fill-white-500;
-}
-</style>

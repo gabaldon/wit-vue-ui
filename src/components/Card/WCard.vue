@@ -28,15 +28,21 @@
     <WIconRounded class="rounded-icon" :big-size="true" :disable-hover-effect="true">
       <slot name="icon">Icon</slot>
     </WIconRounded>
-    <div class="ml-xl px-sm">
+    <div v-if="title" class="ml-xl px-sm">
       <h3 class="text-2xl text-black-950 font-semibold leading-4 pl-14">
         {{ title }}
       </h3>
       <hr class="hr my-md ml-14" />
     </div>
-    <p class="text-black-950 mb-lg">
+    <div v-else>
+      <slot name="header"></slot>
+    </div>
+    <p v-if="description" class="text-black-950 mb-lg">
       {{ description }}
     </p>
+    <div v-else class="mb-lg">
+      <slot name="description"></slot>
+    </div>
 
     <SlashesIcon class="slashes w-2xl sm:hidden"></SlashesIcon>
     <a :href="url" :aria-label="urlLabel" target="_blank">
@@ -64,11 +70,11 @@ const props = defineProps({
   },
   title: {
     type: String,
-    default: 'Title'
+    default: null
   },
   description: {
     type: String,
-    default: 'Description'
+    default: null
   },
   urlLabel: {
     type: String,

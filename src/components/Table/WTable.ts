@@ -6,15 +6,21 @@ export enum Sort {
 }
 
 export type Column = {
-  value: string | number
+  value?: string | number
+  chips?: Chip[]
   label: string
-  url: string | null
+  url?: string
 }
 
 export type Label = {
-  sortType: Sort
+  sortType?: Sort
   label: string
   index: number
+}
+
+export type Chip = {
+  label: string
+  color: string
 }
 
 export type Row = Column[]

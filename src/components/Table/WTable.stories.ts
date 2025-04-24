@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import WTable from './WTable.vue'
-import { getMockupData, getMockupLabels } from './utils'
+import { getMockupData, getMockupData2, getMockupLabels, getMockupLabels2 } from './utils'
 
 const meta: Meta<typeof WTable> = {
   title: 'Example/WTable',
@@ -24,5 +24,20 @@ export const Default: Story = {
   args: {
     labels: getMockupLabels(),
     data: getMockupData()
+  }
+}
+
+export const Chips: Story = {
+  render: (args: unknown) => ({
+    components: { WTable },
+    setup() {
+      return { args }
+    },
+    template: `<WTable v-bind="args" />`
+  }),
+  args: {
+    labels: getMockupLabels2(),
+    data: getMockupData2(),
+    long: true
   }
 }

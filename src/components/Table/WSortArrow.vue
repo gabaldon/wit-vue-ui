@@ -1,14 +1,14 @@
 <template>
   <WIcon
     v-if="!order && isCurrentLabel"
-    :color="'#6d6d6d'"
+    :color="'#a4a2a2'"
     :name="IconName.ArrowUp"
     class="w-[10px] h-auto pl-xs inline"
   ></WIcon>
   <WIcon
     v-else
     :name="IconName.ArrowDown"
-    :color="'#6d6d6d'"
+    :color="'#a4a2a2'"
     class="w-[10px] h-auto pl-xs inline"
   ></WIcon>
 </template>
