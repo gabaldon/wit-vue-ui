@@ -5,6 +5,9 @@
 .docs-story {
   @apply dark:bg-black-950 bg-white-50;
 }
+.sb-show-main {
+  @apply dark:bg-black-950 bg-white-50;
+}
 
 @layer components {
   html {
