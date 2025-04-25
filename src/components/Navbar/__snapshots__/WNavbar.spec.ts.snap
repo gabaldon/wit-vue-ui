@@ -45,7 +45,7 @@ exports[`WNavbar > renders properly the component 1`] = `
       >
         <a
           class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
-          href="#stake"
+          href="/stake"
         >
           <transition-stub
             appear="false"
@@ -69,7 +69,7 @@ exports[`WNavbar > renders properly the component 1`] = `
       >
         <a
           class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
-          href="#buy"
+          href="/buy"
         >
           <transition-stub
             appear="false"
@@ -93,7 +93,7 @@ exports[`WNavbar > renders properly the component 1`] = `
       >
         <a
           class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
-          href="#build"
+          href="/build"
         >
           <transition-stub
             appear="false"

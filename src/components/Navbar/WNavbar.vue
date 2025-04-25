@@ -11,7 +11,7 @@
         </div>
         <li v-for="link in navLinks" :key="link.key" class="nav-link" @click="closeMenu">
           <a
-            :href="`#${link.key}`"
+            :href="link.to"
             class="text font-[500] flex cursor-pointer sm:text-white-50 relative p-[8px] m-[-8px] pl-[16px]"
             @mouseover="activateLink(link)"
             @mouseleave="clearActiveLinks"
