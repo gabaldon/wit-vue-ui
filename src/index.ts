@@ -14,10 +14,11 @@ import WNavbar from './components/Navbar/WNavbar.vue'
 import WPagination from './components/pagination/WPagination.vue'
 import WSection from './components/Section/WSection.vue'
 import WSelect from './components/Select/WSelect.vue'
-import WSpinner from './components/Spinner/WSpinner.vue'
-import WTooltip from './components/Tooltip/WTooltip.vue'
 import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
+import WSpinner from './components/Spinner/WSpinner.vue'
 import WSwitch from './components/Switch/WSwitch.vue'
+import WTable from './components/Card/WTable.vue'
+import WTooltip from './components/Tooltip/WTooltip.vue'
 
 export { buttonTypes, ButtonType } from './components/Button/WButton'
 export { CardType, cardTypes } from './components/Card/WCard'
@@ -35,6 +36,7 @@ export {
 } from './components/Select/WSelect'
 export { SOCIAL_URLS } from './components/SocialsBar/WSocialsBar'
 export { TooltipPosition, tooltipPostions } from './components/Tooltip/WTooltip'
+export { Sort, Column, Label, Chip, Row } from './components/Table/WTable'
 
 export {
   WButton,
@@ -42,8 +44,8 @@ export {
   WEmptyState,
   WFooter,
   WIcon,
-  WIconText,
   WIconRounded,
+  WIconText,
   WInput,
   WLink,
   WLoadingPlaceholder,
@@ -53,7 +55,9 @@ export {
   WSelect,
   WSocialsBar,
   WSpinner,
-  WSwitch
+  WSwitch,
+  WTable,
+  WTooltip
 }
 export type WButton = typeof WButton
 export type WCard = typeof WCard
@@ -68,11 +72,12 @@ export type WLoadingPlaceholder = typeof WLoadingPlaceholder
 export type WNavbar = typeof WNavbar
 export type WPagination = typeof WPagination
 export type WSection = typeof WSection
-export type WSocialsBar = typeof WSocialsBar
 export type WSelect = typeof WSelect
+export type WSocialsBar = typeof WSocialsBar
 export type WSpinner = typeof WSpinner
-export type WTooltip = typeof WTooltip
 export type WSwitch = typeof WSwitch
+export type WTable = typeof WTable
+export type WTooltip = typeof WTooltip
 
 import type { App } from 'vue'
 
@@ -91,11 +96,12 @@ const WComponents = {
     app.component('WNavbar', WNavbar)
     app.component('WPagination', WPagination)
     app.component('WSection', WSection)
-    app.component('WSocialsBar', WSocialsBar)
     app.component('WSelect', WSelect)
+    app.component('WSocialsBar', WSocialsBar)
     app.component('WSpinner', WSpinner)
-    app.component('WTooltip', WTooltip)
     app.component('WSwitch', WSwitch)
+    app.component('WTable', WTable)
+    app.component('WTooltip', WTooltip)
   }
 }
 
