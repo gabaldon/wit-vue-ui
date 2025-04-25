@@ -17,7 +17,7 @@ import WSelect from './components/Select/WSelect.vue'
 import WSocialsBar from './components/SocialsBar/WSocialsBar.vue'
 import WSpinner from './components/Spinner/WSpinner.vue'
 import WSwitch from './components/Switch/WSwitch.vue'
-import WTable from './components/Card/WTable.vue'
+import WTable from './components/Table/WTable.vue'
 import WTooltip from './components/Tooltip/WTooltip.vue'
 
 export { buttonTypes, ButtonType } from './components/Button/WButton'
