@@ -39,7 +39,7 @@ const containerSize = computed(() => `${props.size}px`)
 }
 
 :deep(path) {
-  &:not(.fill-exluded) {
+  &:not(.fill-excluded) {
     @apply fill-black-950;
   }
 }

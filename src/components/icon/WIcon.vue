@@ -101,21 +101,21 @@ const iconComponent = computed(() => {
 <style lang="scss" scoped>
 .color {
   :deep(path) {
-    &:not(.fill-exluded) {
+    &:not(.fill-excluded) {
       fill: v-bind(internalColor);
     }
   }
 }
 .default-color {
   :deep(path) {
-    &:not(.fill-exluded) {
+    &:not(.fill-excluded) {
       @apply fill-black-950 dark:fill-white-50;
     }
   }
 }
 .default-color-reverse {
   :deep(path) {
-    &:not(.fill-exluded) {
+    &:not(.fill-excluded) {
       @apply dark:fill-black-950 fill-white-50;
     }
   }
