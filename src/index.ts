@@ -36,7 +36,7 @@ export {
 } from './components/Select/WSelect'
 export { SOCIAL_URLS } from './components/SocialsBar/WSocialsBar'
 export { TooltipPosition, tooltipPostions } from './components/Tooltip/WTooltip'
-export { Sort, Column, Label, Chip, Row } from './components/Table/WTable'
+export { Sort, type Column, type Label, type Chip, type Row } from './components/Table/WTable'
 
 export {
   WButton,
