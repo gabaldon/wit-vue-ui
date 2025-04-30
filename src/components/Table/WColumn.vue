@@ -16,14 +16,6 @@
     >
       {{ chip.label }}
     </span>
-    <span
-      v-for="(chip, index) in chips"
-      :key="index"
-      :class="chip.color"
-      class="text-sm text-white-50 dark:text-white-50 rounded-full py-xs px-sm m-xs w-max"
-    >
-      {{ chip.label }}
-    </span>
   </p>
   <span v-else>
     {{ value }}
