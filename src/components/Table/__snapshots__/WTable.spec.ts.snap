@@ -18,12 +18,11 @@ exports[`WTable > renders properly 1`] = `
       >
         
         <th
-          class="px-md py-md text-start cursor-pointer last:text-end"
+          class="px-md py-md text-start cursor-pointer last:flex last:justify-end"
           data-v-a63dd56f=""
           scope="col"
         >
           <p
-            class="w-max"
             data-v-a63dd56f=""
           >
             Rank 
@@ -35,12 +34,11 @@ exports[`WTable > renders properly 1`] = `
           </p>
         </th>
         <th
-          class="px-md py-md text-start cursor-pointer last:text-end"
+          class="px-md py-md text-start cursor-pointer last:flex last:justify-end"
           data-v-a63dd56f=""
           scope="col"
         >
           <p
-            class="flex w-max"
             data-v-a63dd56f=""
           >
             Address 
@@ -66,12 +64,11 @@ exports[`WTable > renders properly 1`] = `
           </p>
         </th>
         <th
-          class="px-md py-md text-start cursor-pointer last:text-end"
+          class="px-md py-md text-start cursor-pointer last:flex last:justify-end"
           data-v-a63dd56f=""
           scope="col"
         >
           <p
-            class="flex w-max"
             data-v-a63dd56f=""
           >
             Amount 

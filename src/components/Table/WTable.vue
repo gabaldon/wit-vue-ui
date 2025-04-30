@@ -10,12 +10,12 @@
       <tr>
         <th
           scope="col"
-          class="px-md py-md text-start cursor-pointer last:text-end"
+          class="px-md py-md text-start cursor-pointer last:flex last:justify-end"
           v-for="col in labels"
           :key="col.label"
           @click="col.sortType ? setSortLabel(col.sortType, col.index) : () => {}"
         >
-          <p :class="{ flex: col.sortType }" class="w-max">
+          <p>
             {{ col.label }}
             <span
               ><WSortArrow
