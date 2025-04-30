@@ -15,13 +15,17 @@
           :key="col.label"
           @click="col.sortType ? setSortLabel(col.sortType, col.index) : () => {}"
         >
-          {{ col.label }}
-          <WSortArrow
-            v-if="col.sortType"
-            :current-label="currentSortType"
-            :label="col.sortType"
-            :order="order"
-          ></WSortArrow>
+          <p :class="{ flex: col.sortType }" class="w-max">
+            {{ col.label }}
+            <span
+              ><WSortArrow
+                v-if="col.sortType"
+                :current-label="currentSortType"
+                :label="col.sortType"
+                :order="order"
+              ></WSortArrow
+            ></span>
+          </p>
         </th>
       </tr>
     </thead>
@@ -40,20 +44,29 @@
           v-for="col in row"
           :key="col.value"
           :class="long ? 'md2:grid' : 'sm:grid'"
-          class="hidden w-max"
+          class="hidden w-full"
         >
           <th class="label">{{ col.label }}</th>
-          <td class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap">
-            <WColumn :url="col.url" :value="col.value" :chips="col.chips"></WColumn>
+          <td
+            class="px-md py-md [&&]:sm:pt-sm"
+            :class="{ 'break-all': !breakLineByLabel(col.label) }"
+          >
+            <WColumn :url="col.url" :value="col.value" :chips="col.chips" class="w-full"></WColumn>
           </td>
         </div>
         <td
           v-for="col in row"
           :key="col.value"
-          :class="long ? 'md2:hidden' : 'sm:hidden'"
-          class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          :class="{
+            'md2:hidden': long,
+            'sm:hidden': !long,
+            'whitespace-normal': breakLineByLabel(col.label),
+            'w-[1px]': !breakLineByLabel(col.label),
+            'whitespace-nowrap': !breakLineByLabel(col.label)
+          }"
+          class="desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
         >
-          <WColumn :url="col.url" :value="col.value" :chips="col.chips"></WColumn>
+          <WColumn :url="col.url" :value="col.value" :chips="col.chips" class="w-max"></WColumn>
         </td>
       </tr>
     </tbody>
@@ -118,6 +131,15 @@ const sortedData: Ref<Row[]> = computed(() => {
   return data.sort(sortFunctions[currentSortType.value])
 })
 
+function breakLineByLabel(colLabel: string): boolean {
+  return props.labels.reduce((label: Label, acc: Label): Label => {
+    if (label.label === colLabel && label.break) {
+      acc = label
+    }
+    return acc
+  }).break
+}
+
 function setSortLabel(label: Sort, index: number) {
   if (currentSortType.value === label) {
     order.value = !order.value
@@ -138,5 +160,12 @@ function setSortLabel(label: Sort, index: number) {
 }
 .t-value {
   @apply px-md py-md [&&]:sm:pt-sm;
+}
+
+tr:last-child .desktop-td:first-of-type {
+  border-bottom-left-radius: 24px;
+}
+tr:last-child .desktop-td:last-of-type {
+  border-bottom-right-radius: 24px;
 }
 </style>

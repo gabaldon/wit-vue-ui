@@ -22,52 +22,79 @@ exports[`WTable > renders properly 1`] = `
           data-v-a63dd56f=""
           scope="col"
         >
-          Rank 
-          <!--v-if-->
+          <p
+            class="w-max"
+            data-v-a63dd56f=""
+          >
+            Rank 
+            <span
+              data-v-a63dd56f=""
+            >
+              <!--v-if-->
+            </span>
+          </p>
         </th>
         <th
           class="px-md py-md text-start cursor-pointer last:text-end"
           data-v-a63dd56f=""
           scope="col"
         >
-          Address 
-          <svg
-            class="color w-[10px] h-auto pl-xs inline w-[10px] h-auto pl-xs inline"
+          <p
+            class="flex w-max"
             data-v-a63dd56f=""
-            data-v-c15836e8=""
-            fill="none"
-            height="11"
-            viewBox="0 0 11 11"
-            width="11"
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M6.799 9.75a1.5 1.5 0 0 1-2.598 0L.304 3A1.5 1.5 0 0 1 1.603.75h7.794a1.5 1.5 0 0 1 1.3 2.25z"
-              fill="#D9D9D9"
-            />
-          </svg>
+            Address 
+            <span
+              data-v-a63dd56f=""
+            >
+              <svg
+                class="color w-[10px] h-auto pl-xs inline w-[10px] h-auto pl-xs inline"
+                data-v-a63dd56f=""
+                data-v-c15836e8=""
+                fill="none"
+                height="11"
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.799 9.75a1.5 1.5 0 0 1-2.598 0L.304 3A1.5 1.5 0 0 1 1.603.75h7.794a1.5 1.5 0 0 1 1.3 2.25z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </span>
+          </p>
         </th>
         <th
           class="px-md py-md text-start cursor-pointer last:text-end"
           data-v-a63dd56f=""
           scope="col"
         >
-          Amount 
-          <svg
-            class="color w-[10px] h-auto pl-xs inline w-[10px] h-auto pl-xs inline"
+          <p
+            class="flex w-max"
             data-v-a63dd56f=""
-            data-v-c15836e8=""
-            fill="none"
-            height="11"
-            viewBox="0 0 11 11"
-            width="11"
-            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M6.799 9.75a1.5 1.5 0 0 1-2.598 0L.304 3A1.5 1.5 0 0 1 1.603.75h7.794a1.5 1.5 0 0 1 1.3 2.25z"
-              fill="#D9D9D9"
-            />
-          </svg>
+            Amount 
+            <span
+              data-v-a63dd56f=""
+            >
+              <svg
+                class="color w-[10px] h-auto pl-xs inline w-[10px] h-auto pl-xs inline"
+                data-v-a63dd56f=""
+                data-v-c15836e8=""
+                fill="none"
+                height="11"
+                viewBox="0 0 11 11"
+                width="11"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.799 9.75a1.5 1.5 0 0 1-2.598 0L.304 3A1.5 1.5 0 0 1 1.603.75h7.794a1.5 1.5 0 0 1 1.3 2.25z"
+                  fill="#D9D9D9"
+                />
+              </svg>
+            </span>
+          </p>
         </th>
         
       </tr>
@@ -82,7 +109,7 @@ exports[`WTable > renders properly 1`] = `
       >
         
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -92,10 +119,11 @@ exports[`WTable > renders properly 1`] = `
             Rank
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               1
@@ -103,7 +131,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -113,21 +141,21 @@ exports[`WTable > renders properly 1`] = `
             Address
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-full"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
             >
-              wit
+              wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
             </a>
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -137,10 +165,11 @@ exports[`WTable > renders properly 1`] = `
             Amount
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               1
@@ -150,33 +179,35 @@ exports[`WTable > renders properly 1`] = `
         
         
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             1
           </span>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-max"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"
           >
-            wit
+            wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
           </a>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             1
@@ -190,7 +221,7 @@ exports[`WTable > renders properly 1`] = `
       >
         
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -200,10 +231,11 @@ exports[`WTable > renders properly 1`] = `
             Rank
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               2
@@ -211,7 +243,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -221,21 +253,21 @@ exports[`WTable > renders properly 1`] = `
             Address
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-full"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
             >
-              wit
+              wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
             </a>
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -245,10 +277,11 @@ exports[`WTable > renders properly 1`] = `
             Amount
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               2
@@ -258,33 +291,35 @@ exports[`WTable > renders properly 1`] = `
         
         
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             2
           </span>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-max"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"
           >
-            wit
+            wit2hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
           </a>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             2
@@ -298,7 +333,7 @@ exports[`WTable > renders properly 1`] = `
       >
         
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -308,10 +343,11 @@ exports[`WTable > renders properly 1`] = `
             Rank
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               3
@@ -319,7 +355,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -329,21 +365,21 @@ exports[`WTable > renders properly 1`] = `
             Address
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <a
-              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+              class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-full"
               data-v-a63dd56f=""
               href="https://"
               target="_blank"
             >
-              wit
+              wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
             </a>
           </td>
         </div>
         <div
-          class="sm:grid hidden w-max"
+          class="sm:grid hidden w-full"
           data-v-a63dd56f=""
         >
           <th
@@ -353,10 +389,11 @@ exports[`WTable > renders properly 1`] = `
             Amount
           </th>
           <td
-            class="px-md py-md [&&]:sm:pt-sm whitespace-nowrap"
+            class="px-md py-md [&&]:sm:pt-sm break-all"
             data-v-a63dd56f=""
           >
             <span
+              class="w-full"
               data-v-a63dd56f=""
             >
               3
@@ -366,33 +403,35 @@ exports[`WTable > renders properly 1`] = `
         
         
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             3
           </span>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <a
-            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
+            class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline w-max"
             data-v-a63dd56f=""
             href="https://"
             target="_blank"
           >
-            wit
+            wit3hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k &gt; 
           </a>
         </td>
         <td
-          class="sm:hidden px-md py-md [&&]:sm:pt-sm whitespace-nowrap last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
+            class="w-max"
             data-v-a63dd56f=""
           >
             3

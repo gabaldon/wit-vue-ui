@@ -5,28 +5,34 @@ export function getMockupLabels2() {
     {
       sortType: Sort.alphabetically,
       label: 'Title',
+      break: true,
       index: 0
     },
     {
       sortType: Sort.alphabetically,
       label: 'Description',
+      break: true,
       index: 1
     },
     {
       label: 'Tags',
+      break: false,
       index: 2
     },
     {
       label: 'Labels',
+      break: false,
       index: 3
     },
     {
       sortType: Sort.alphabeticallyReverse,
       label: 'Date',
+      break: false,
       index: 4
     },
     {
       label: 'Link',
+      break: false,
       index: 5
     }
   ]
@@ -37,16 +43,19 @@ export function getMockupLabels() {
     {
       sortType: Sort.ascentant,
       label: 'Rank',
+      break: false,
       index: 0
     },
     {
       sortType: Sort.alphabetically,
       label: 'Address',
+      break: false,
       index: 1
     },
     {
       sortType: Sort.descendant,
       label: 'Amount',
+      break: false,
       index: 2
     }
   ]
@@ -56,7 +65,7 @@ const rankRow = {
   label: 'Rank'
 }
 const addressRow = {
-  value: 'wit',
+  value: 'wit1hp8xnclrhm4j5lrzxwnxurdetzsjqw88kwr06k',
   label: 'Address',
   url: 'https://'
 }
@@ -88,11 +97,11 @@ export function getMockupData() {
   return [row, row2, row3]
 }
 const col2_1: Column = {
-  value: 'Title',
+  value: 'Lorem ipsum dolor sit amet',
   label: 'Title'
 }
 const col2_2 = {
-  value: 'Description',
+  value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a.',
   label: 'Description'
 }
 const col2_3 = {
@@ -119,7 +128,7 @@ const col2_4 = {
   label: 'Labels'
 }
 const col2_5 = {
-  value: '2025-01-11T00:00:00.000+02:00',
+  value: '2025-01-11',
   label: 'Date'
 }
 const col2_6 = {
@@ -131,5 +140,6 @@ const row1: Row = [col2_1, col2_2, col2_3, col2_4, col2_5, col2_6]
 export function getMockupData2() {
   const row2: Row = addRow(2, row1)
   const row3: Row = addRow(3, row1)
-  return [row1, row2, row3]
+  const row4: Row = addRow(4, row1)
+  return [row1, row2, row3, row4]
 }

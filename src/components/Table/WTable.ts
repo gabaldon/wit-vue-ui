@@ -14,6 +14,7 @@ export type Column = {
 
 export type Label = {
   sortType?: Sort
+  break: boolean
   label: string
   index: number
 }

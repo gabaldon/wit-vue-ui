@@ -5,17 +5,26 @@
     target="_blank"
     class="text-wit-blue-600 dark:text-wit-blue-500 hover:underline"
   >
-    {{ value ?? 'unknown' }}
+    {{ value ?? 'unknown' }} >
   </a>
-  <span
-    v-else-if="chips"
-    v-for="(chip, index) in chips"
-    :key="index"
-    :class="chip.color"
-    class="text-sm text-white-50 dark:text-white-50 rounded-full py-xs px-sm m-xs"
-  >
-    {{ chip.label }}
-  </span>
+  <p v-else-if="chips" class="grid grid-cols-2 w-max">
+    <span
+      v-for="(chip, index) in chips"
+      :key="index"
+      :class="chip.color"
+      class="text-sm text-white-50 dark:text-white-50 rounded-full py-xs px-sm m-xs w-max"
+    >
+      {{ chip.label }}
+    </span>
+    <span
+      v-for="(chip, index) in chips"
+      :key="index"
+      :class="chip.color"
+      class="text-sm text-white-50 dark:text-white-50 rounded-full py-xs px-sm m-xs w-max"
+    >
+      {{ chip.label }}
+    </span>
+  </p>
   <span v-else>
     {{ value }}
   </span>
