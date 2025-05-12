@@ -7,7 +7,7 @@
   >
     {{ value ?? 'unknown' }} >
   </a>
-  <p v-else-if="chips" class="grid grid-cols-2 w-max">
+  <p v-else-if="chips" class="grid grid-cols-[max-content_max-content] w-max">
     <span
       v-for="(chip, index) in chips"
       :key="index"

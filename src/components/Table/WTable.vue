@@ -31,14 +31,14 @@
     </thead>
     <tbody>
       <tr
-        v-for="row in sortedData"
+        v-for="(row, index) in sortedData"
         :key="row[0].value"
         :class="
           long
             ? 'md2:py-md md2:grid md2:grid-cols-2 md2:w-full sm:grid-cols-1'
             : 'sm:py-md sm:grid sm:grid-col-1'
         "
-        class="transition-all duration-200 even:bg-white-200 dark:even:bg-black-600"
+        class="transition-all duration-200"
       >
         <div
           v-for="col in row"
@@ -62,7 +62,8 @@
             'sm:hidden': !long,
             'whitespace-normal': breakLineByLabel(col.label),
             'w-[1px]': !breakLineByLabel(col.label),
-            'whitespace-nowrap': !breakLineByLabel(col.label)
+            'whitespace-nowrap': !breakLineByLabel(col.label),
+            'bg-white-200 dark:bg-black-600': index % 2
           }"
           class="desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
         >
