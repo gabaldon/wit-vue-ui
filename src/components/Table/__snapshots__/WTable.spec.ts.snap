@@ -101,7 +101,7 @@ exports[`WTable > renders properly 1`] = `
     >
       
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200 even:bg-white-200 dark:even:bg-black-600"
+        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
         data-v-a63dd56f=""
       >
         
@@ -213,7 +213,7 @@ exports[`WTable > renders properly 1`] = `
         
       </tr>
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200 even:bg-white-200 dark:even:bg-black-600"
+        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
         data-v-a63dd56f=""
       >
         
@@ -288,7 +288,7 @@ exports[`WTable > renders properly 1`] = `
         
         
         <td
-          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap bg-white-200 dark:bg-black-600 desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
@@ -299,7 +299,7 @@ exports[`WTable > renders properly 1`] = `
           </span>
         </td>
         <td
-          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap bg-white-200 dark:bg-black-600 desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <a
@@ -312,7 +312,7 @@ exports[`WTable > renders properly 1`] = `
           </a>
         </td>
         <td
-          class="sm:hidden w-[1px] whitespace-nowrap desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
+          class="sm:hidden w-[1px] whitespace-nowrap bg-white-200 dark:bg-black-600 desktop-td px-md py-md [&&]:sm:pt-sm last:text-end"
           data-v-a63dd56f=""
         >
           <span
@@ -325,7 +325,7 @@ exports[`WTable > renders properly 1`] = `
         
       </tr>
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200 even:bg-white-200 dark:even:bg-black-600"
+        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
         data-v-a63dd56f=""
       >
         
