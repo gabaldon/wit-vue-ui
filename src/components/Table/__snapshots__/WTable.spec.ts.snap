@@ -101,12 +101,12 @@ exports[`WTable > renders properly 1`] = `
     >
       
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
+        class="sm:grid sm:grid-col-1 transition-all duration-200 last:rounded-b-[24px]"
         data-v-a63dd56f=""
       >
         
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -128,7 +128,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -152,7 +152,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -213,12 +213,12 @@ exports[`WTable > renders properly 1`] = `
         
       </tr>
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
+        class="sm:grid sm:grid-col-1 md2:bg-white-200 md2:dark:bg-black-600 transition-all duration-200 last:rounded-b-[24px]"
         data-v-a63dd56f=""
       >
         
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -240,7 +240,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -264,7 +264,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -325,12 +325,12 @@ exports[`WTable > renders properly 1`] = `
         
       </tr>
       <tr
-        class="sm:py-md sm:grid sm:grid-col-1 transition-all duration-200"
+        class="sm:grid sm:grid-col-1 transition-all duration-200 last:rounded-b-[24px]"
         data-v-a63dd56f=""
       >
         
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -352,7 +352,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th
@@ -376,7 +376,7 @@ exports[`WTable > renders properly 1`] = `
           </td>
         </div>
         <div
-          class="sm:grid hidden w-full"
+          class="hidden w-full py-md sm:grid"
           data-v-a63dd56f=""
         >
           <th

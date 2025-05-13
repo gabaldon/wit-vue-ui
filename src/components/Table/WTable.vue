@@ -33,18 +33,18 @@
       <tr
         v-for="(row, index) in sortedData"
         :key="row[0].value"
-        :class="
-          long
-            ? 'md2:py-md md2:grid md2:grid-cols-2 md2:w-full sm:grid-cols-1'
-            : 'sm:py-md sm:grid sm:grid-col-1'
-        "
-        class="transition-all duration-200"
+        :class="{
+          'md2:grid md2:grid-cols-2 md2:w-full sm:grid-cols-1': long,
+          'sm:grid sm:grid-col-1': !long,
+          'md2:bg-white-200 md2:dark:bg-black-600': index % 2
+        }"
+        class="transition-all duration-200 last:rounded-b-[24px]"
       >
         <div
           v-for="col in row"
           :key="col.value"
-          :class="long ? 'md2:grid' : 'sm:grid'"
-          class="hidden w-full"
+          class="hidden w-full py-md"
+          :class="{ 'md2:grid': long, 'sm:grid': !long }"
         >
           <th class="label">{{ col.label }}</th>
           <td
