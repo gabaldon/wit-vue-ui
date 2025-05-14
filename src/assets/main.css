@@ -49,6 +49,11 @@
     line-height: 1.1;
   }
 
+  .title-h6 {
+    @apply text-xl font-semibold sm:text-xl text-black-950 dark:text-white-50;
+    line-height: 1.1;
+  }
+
   .text {
     @apply text-base text-black-900 dark:text-white-100;
     line-height: 1.5;
@@ -71,6 +76,11 @@
 
   .subtitle {
     @apply text-sm text-white-300;
+  }
+
+  .small-text {
+    @apply text-xs text-black-950 dark:text-white-50 font-medium;
+    line-height: 1.5;
   }
 
   .footer-text {

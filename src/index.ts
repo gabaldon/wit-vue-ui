@@ -3,11 +3,13 @@ import './assets/main.css'
 import WButton from './components/Button/WButton.vue'
 import WCard from './components/Card/WCard.vue'
 import WEmptyState from './components/EmptyState/WEmptyState.vue'
+import WFeedCard from './components/FeedCard/WFeedCard.vue'
 import WFooter from './components/Footer/WFooter.vue'
 import WIcon from './components/icon/WIcon.vue'
 import WIconRounded from './components/IconRounded/WIconRounded.vue'
 import WIconText from './components/IconText/WIconText.vue'
 import WInput from './components/Input/WInput.vue'
+import WLatestUpdates from './components/LatestUpdates/WLatestUpdates.vue'
 import WLink from './components/Link/WLink.vue'
 import WLoadingPlaceholder from './components/LoadingPlaceholder/WLoadingPlaceholder.vue'
 import WNavbar from './components/Navbar/WNavbar.vue'
@@ -42,11 +44,13 @@ export {
   WButton,
   WCard,
   WEmptyState,
+  WFeedCard,
   WFooter,
   WIcon,
   WIconRounded,
   WIconText,
   WInput,
+  WLatestUpdates,
   WLink,
   WLoadingPlaceholder,
   WNavbar,
@@ -62,11 +66,13 @@ export {
 export type WButton = typeof WButton
 export type WCard = typeof WCard
 export type WEmptyState = typeof WEmptyState
+export type WFeedCard = typeof WFeedCard
 export type WFooter = typeof WFooter
 export type WIcon = typeof WIcon
 export type WIconRounded = typeof WIconRounded
 export type WIconText = typeof WIconText
 export type WInput = typeof WInput
+export type WLatestUpdates = typeof WLatestUpdates
 export type WLink = typeof WLink
 export type WLoadingPlaceholder = typeof WLoadingPlaceholder
 export type WNavbar = typeof WNavbar
@@ -86,11 +92,13 @@ const WComponents = {
     app.component('WButton', WButton)
     app.component('WCard', WCard)
     app.component('WEmptyState', WEmptyState)
+    app.component('WFeedCard', WFeedCard)
     app.component('WFooter', WFooter)
     app.component('WIcon', WIcon)
     app.component('WIconRounded', WIconRounded)
     app.component('WIconText', WIconText)
     app.component('WInput', WInput)
+    app.component('WLatestUpdates', WLatestUpdates)
     app.component('WLink', WLink)
     app.component('WLoadingPlaceholder', WLoadingPlaceholder)
     app.component('WNavbar', WNavbar)
